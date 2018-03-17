@@ -1,0 +1,35 @@
+/* USER REPO VIEW */
+
+#userRepos {
+    width: 90%;
+    height: 500px;
+    overflow: scroll;
+    margin-bottom: 40px;
+}
+
+.repo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+    padding: 0 15px;
+}
+
+#repoHeader {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.8);
+    align-self: flex-start;
+    width: 88%;
+    margin: 20px auto 10px auto;
+    height: 40px;
+    padding-bottom: 10px;
+}
+
+.repo-title {
+    overflow: hidden;
+}
+
+.icon-block {
+    display: flex;
+    align-items: center;
+}

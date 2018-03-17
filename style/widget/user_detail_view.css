@@ -1,0 +1,35 @@
+/* STYLES FOR THE USER DETAILS VIEW  */
+
+#userInfos {
+    margin-top: 120px;
+    width: 88%;
+    height: 100px !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    transition-delay: all 0.3s;
+}
+
+.user-details {
+    max-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+
+.user-avatar {
+    width: 100px;
+    height: 100px;
+}
+
+.user-avatar img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.long-bio {
+    height: 230px !important;
+}

@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
     <title>Hello!</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/widget/user_repos_view.css">
+    <link rel="stylesheet" href="./style/widget/user_detail_view.css">
+    <link rel="stylesheet" href="./style/widget/search_block.css">
+    <link rel="stylesheet" href="./style/widget/error_view.css">
+    <link rel="stylesheet" href="./style/widget/widget.css">
 </head>
+
 <body>
 
-<h1>Hello!</h1>
+    <div class="widget">
+        <div class="input-group">
+            <input id="searchInput" type="text" placeholder="Search username...">
+            <input id="search" type="submit" value="Search" onclick="clickHandler(input.value)">
+        </div>
+        <div id="error" class="hidden">
+            <h3>Does not exist</h3>
+        </div>
+        <div id="userInfos" class="hidden">
+            <div class="user-avatar">
+                <img src="" alt="avatar">
+            </div>
+            <div class="user-details">
+                <h4 id="userName"></h4>
+                <h1 id="fullName"></h1>
+                <p id="bio"></p>
+            </div>
+        </div>
+        <div id="repoHeader" class="hidden">
+            <h3 >Repositories</h3>
+        </div>
+        <div id="userRepos" class="hidden">
+
+        </div>
+    </div>
+
+    <script src="./script/dom_elements.js"></script>
+    <script src="./script/dom_helpers.js"></script>
+    <script src="./script/write_user_details.js"></script>
+    <script src="./script/index.js"></script>
 </body>
+
 </html>

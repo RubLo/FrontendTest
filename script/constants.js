@@ -5,3 +5,7 @@ const widget = document.querySelector(".widget"),
   userInfos = document.querySelector("#userInfos"),
   userRepos = document.querySelector("#userRepos"),
   repoHeader = document.querySelector("#repoHeader");
+
+const rootURL = "https://api.github.com/users/";
+const oAuth = "?access_token="; //insert your own access token after the equal
+

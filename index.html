@@ -3,7 +3,7 @@
 
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Hello!</title>
+    <title>GitHub Repo Viewer</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/widget/user_repos_view.css">
     <link rel="stylesheet" href="./style/widget/user_detail_view.css">
@@ -14,9 +14,9 @@
 
 <body>
 
-    <div class="widget">
+    <main class="widget">
         <div class="input-group">
-            <input id="searchInput" type="text" placeholder="Search username...">
+            <input id="searchInput" type="text" name="username" placeholder="Search username..." required>
             <input id="search" type="submit" value="Search" onclick="clickHandler(input.value)">
         </div>
         <div id="error" class="hidden">
@@ -33,16 +33,16 @@
             </div>
         </div>
         <div id="repoHeader" class="hidden">
-            <h3 >Repositories</h3>
+            <h3>Repositories</h3>
         </div>
         <div id="userRepos" class="hidden">
 
         </div>
-    </div>
+    </main>
 
-    <script src="./script/dom_elements.js"></script>
+    <script src="./script/constants.js"></script>
     <script src="./script/dom_helpers.js"></script>
-    <script src="./script/write_user_details.js"></script>
+    <script src="./script/gitViewer.js"></script>
     <script src="./script/index.js"></script>
 </body>
 

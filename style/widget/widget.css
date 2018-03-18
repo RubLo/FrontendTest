@@ -1,38 +1,37 @@
 /* GLOBAL VIEW OF THE WIDGET */
 
 .widget {
-    margin-top: 6rem;
-    padding: 10px 30px;
-    width: 500px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
-    border-radius: 20px;
-    background: white;
-    height: 120px;
-    transition: all 0.3s;
+  margin-top: 6rem;
+  padding: 10px 30px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  background: white;
+  height: 120px;
+  transition: all 0.3s;
 }
 
 /* STYLE FOR THE ERROR VIEW AND REPOS VIEW */
 
-.expand-for-error {
-    height: 250px;
-    transition: all 0.3;
+.expand-for-error,
+.expand-for-details {
+  height: 250px;
 }
 
-.expand-for-details {
-    height: 600px;
-    transition: all 0.3s;
+.expand-for-repos {
+  height: 600px;
 }
 
 /* HIDE AND SHOW */
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 .visible {
-    opacity: 1 !important;
+  visibility: visible !important;
 }
